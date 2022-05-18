@@ -17,6 +17,14 @@ export class RhinoLogger {
   }
 
   /**
+   * setLevel sets the log level at which logging should be done for this logger
+   * @param { number } level update the log level to the given level
+   */
+  setLevel (level) {
+    this.level = level
+  }
+
+  /**
    * Logs a message at the given level. Levels at or over WARNING are written
    * to stdout via console.log; levels below WARNING are written to stderr via
    * console.error. A UTC timestamp is added to the message.
@@ -40,3 +48,5 @@ export class RhinoLogger {
     }
   }
 }
+
+export const logger = new RhinoLogger(RhinoLogger.DEBUG)

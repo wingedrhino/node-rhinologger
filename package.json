@@ -1,0 +1,34 @@
+{
+  "name": "rhinologger",
+  "version": "0.1.0",
+  "description": "An opinionated logger that outputs one minified JSON line per log to stdout or stderr",
+  "main": "rhinologger.js",
+  "types": "rhinologger.d.ts",
+  "type": "module",
+  "engines": {
+    "node": ">=18.2.0",
+    "npm": ">=8.9.0"
+  },
+  "scripts": {
+    "gentypes": "tsc rhinologger.js --declaration --allowJs --emitDeclarationOnly --outDir .",
+    "lint": "standard",
+    "lint:fix": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wingedrhino/node-rhinologger.git"
+  },
+  "keywords": [
+    "logging"
+  ],
+  "author": "Rhino Maximus",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/wingedrhino/node-rhinologger/issues"
+  },
+  "homepage": "https://github.com/wingedrhino/node-rhinologger#readme",
+  "devDependencies": {
+    "standard": "^17.0.0",
+    "typescript": "^4.6.4"
+  }
+}

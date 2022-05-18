@@ -1,6 +1,6 @@
 {
   "name": "rhinologger",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "An opinionated logger that outputs one minified JSON line per log to stdout or stderr",
   "main": "rhinologger.js",
   "types": "rhinologger.d.ts",
